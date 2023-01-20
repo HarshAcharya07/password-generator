@@ -74,8 +74,8 @@ textarea:focus, input:focus{
     display: flex;
     color: white;
     font-family: "Roboto";
-    font-weight: 300;
-    font-size: x-large;
+    font-weight: 200;
+    font-size: 24px;
 }
 input[type="text"]::placeholder {
                  
@@ -98,4 +98,10 @@ input[type="text"]::placeholder {
 
     border: none;
     border-radius: 10px;
+}
+.upper-case{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 2px solid red; */
 }

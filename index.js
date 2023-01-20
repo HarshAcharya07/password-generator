@@ -5,8 +5,6 @@ const special = "!()-.?[]_#$&@"
 
 // Selectors 
 const passBox = document.getElementById("input-text")
-passBox.innerText = "Hello"
-console.log(passBox)
 const upperSet = document.getElementById('upper')
 const lowerSet = document.getElementById('lower')
 const numberSet = document.getElementById('numbers')
@@ -31,18 +29,18 @@ const generatePassword = (password = "") => {
     if(specialSet.checked) {
         password += getRandomData(special)
     }
-    if(password.length < 10)
+    if(password.length < 15)
     {
         return generatePassword(password)
     }
     let x = document.getElementById('input-text')
-    x.innerText = cutting(password,10)
-    // console.log(cutting(password,10))
+    x.value = cutting(password,15)
 
 }
 function fun1(){
 
     generatePassword()
+    
 }
 function cutting(str, num){
     if(str.length > num)
@@ -53,3 +51,18 @@ function cutting(str, num){
         return str;
     }
 }
+
+function myFunction() {
+    // Get the text field
+    var copyText = document.getElementById("input-text");
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+  
+     // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+  
+    // Alert the copied text
+    alert("Copied the text: " + copyText.value);
+  }
