@@ -1,0 +1,101 @@
+/* imports fonts*/
+/* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Sofia+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.output{
+    width: 400px;
+    height: 350px;
+    background-color: #18191A;
+    flex-direction: column;
+    border-radius: 10px;
+    display: flex;
+    /* justify-content: center; */
+    /* border: 2px solid green; */
+}
+#input-text{
+
+    border-radius: 5px;
+    /* border: 2px solid red; */
+    font-family: "Roboto";
+    font-weight: 200;
+    /* color: #E4E6EB; */
+    border: none;
+    color: white;
+    background-color: #3A3B3C;
+    padding: 5px;
+    /* padding: 12px 100px 10px 100px; */
+    font-size: 25px;
+
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+    height: 60px;
+    /* border: 2px solid pink; */
+    width: 100%;
+}
+.output{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#main-button{
+    /* border: 2px solid green; */
+    border-radius: 5px;
+    /* height: 42px; */
+    height: 30px;
+    background-color: #3A3B3C;
+    color: white;
+	outline: inherit;
+    border: none;
+
+}
+
+
+.upper-case{
+    /* border:2px solid red; */
+    margin-top: 3px;
+    display: flex;
+    color: white;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: x-large;
+}
+input[type="text"]::placeholder {
+                 
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}
+#generate{
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: xx-large;
+    margin-top: 70px;
+    background-color: #3a3b3c;
+    font-family: "Sofia Sans";
+    /* color: #bb86fc; */
+    color: #e4e6eb;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    border: none;
+    border-radius: 10px;
+}
