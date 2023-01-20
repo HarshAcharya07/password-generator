@@ -22,21 +22,27 @@
                 <div class="input">
                   <input type="text" name="" id="input-text" class="hero" placeholder="Generated Password"/>
                   <button id="main-button">
-                      <i class="material-icons" id="copy" onclick="myFunction()">content_copy</i>
+                      <i class="material-icons" id="copy">content_copy</i>
                   </button>
                 </div>
         
     
-            </div>
+              </div>
+
+              <div class="slider">
+                <input type="range" class="range-slider" id="slid" min="0" max="100" value="100">
+                <label for="" id="label-left">0</label>
+                <label for="" id="label-right">100</label>
+              </div>
 
          <div class="options">
             <div class="upper-case">
                 <span>Contains Upper Case</span>
-                <input type="checkbox" name="" id="upper">
+                <input type="checkbox" name="" id="upper" checked>
             </div>
             <div class="upper-case">
                 <span>Contains Lower Case</span>
-                <input type="checkbox" name="" id="lower">
+                <input type="checkbox" name="" id="lower" checked>
             </div>
             <div class="upper-case">
                 <span>Contains Numbers</span>
@@ -47,7 +53,7 @@
                 <input type="checkbox" name="" id="symbols">
             </div>
         </div>
-        <button id="generate" onclick="fun1()">Generate</button>
+        <button id="generate">Generate</button>
          
         </div>
     </div>

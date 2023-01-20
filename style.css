@@ -58,13 +58,17 @@ textarea:focus, input:focus{
 #main-button{
     /* border: 2px solid green; */
     border-radius: 5px;
-    /* height: 42px; */
-    height: 30px;
+    height: 40px;
+    /* border-left: none ; */
     background-color: #3A3B3C;
     color: white;
 	outline: inherit;
     border: none;
+    /* font-size: xx-large; */
 
+}
+#main-button:hover{
+    background-color: rgb(85, 9, 9);
 }
 
 
@@ -99,9 +103,51 @@ input[type="text"]::placeholder {
     border: none;
     border-radius: 10px;
 }
+#generate:hover{
+    background-color: #434951;
+}
+#generate:active{
+    background-color: rgb(53, 51, 51);
+}
 .upper-case{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     /* border: 2px solid red; */
 }
+.range-slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1px;
+    outline: none;
+
+}
+.range-slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: #0075FF;
+    width:20px;
+    height:20px;
+    /* background: #bb86fc; */
+    border-radius: 50%;
+
+}
+.range-slider::-webkit-slider-thumb:hover{
+    box-shadow: 0 0 0 10px rgba(255,255,255, 0.2);
+}
+.range-slider::-webkit-slider-thumb:active{
+    box-shadow: 0 0 0 10px rgba(255,255,255, 0.3);
+    
+}
+.slider{
+    position: relative;
+}
+label{
+    color: white;
+    font-size: small;
+    font-family:"Roboto";
+    font-weight: 300;
+}
+#label-right{
+    float: right;
+}
+

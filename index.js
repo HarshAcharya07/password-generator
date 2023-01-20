@@ -10,12 +10,11 @@ const lowerSet = document.getElementById('lower')
 const numberSet = document.getElementById('numbers')
 const specialSet = document.getElementById('symbols')
 
-
 const getRandomData = (dataSet) => {
     return dataSet[Math.floor(Math.random() * dataSet.length)]
-
+    
 }
-// let password = ""
+let password
 const generatePassword = (password = "") => {
     if(upperSet.checked) {
         password += getRandomData(upperCase)
@@ -29,19 +28,23 @@ const generatePassword = (password = "") => {
     if(specialSet.checked) {
         password += getRandomData(special)
     }
-    if(password.length < 15)
+    if(password.length < slider.value)
     {
         return generatePassword(password)
     }
     let x = document.getElementById('input-text')
-    x.value = cutting(password,15)
-
-}
-function fun1(){
-
-    generatePassword()
+    x.value = cutting(password,slider.value)
     
 }
+
+document.getElementById('generate').addEventListener("click",function() {
+    generatePassword()
+    
+})
+
+document.getElementById('copy').addEventListener('click', function() {
+    myFunction()
+})
 function cutting(str, num){
     if(str.length > num)
     {
@@ -55,14 +58,26 @@ function cutting(str, num){
 function myFunction() {
     // Get the text field
     var copyText = document.getElementById("input-text");
-  
+    
     // Select the text field
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
-  
-     // Copy the text inside the text field
+    
+    // Copy the text inside the text field
     navigator.clipboard.writeText(copyText.value);
   
     // Alert the copied text
     alert("Copied the text: " + copyText.value);
   }
+//   document.getElementById("numbers").defaultChecked;
+
+// slider code 
+var slider = document.getElementById('slid')
+var label = document.getElementById('label-right')
+label.innerHTML = slider.value;
+slider.style.background = 'linear-gradient(90deg,#bb86fc 100%,#ddd 0)'
+
+slider.oninput = function () {
+    label.innerHTML = slider.value;
+    slider.style.background = 'linear-gradient(90deg,#bb86fc '+slider.value+'%,#ddd 0)'
+}
