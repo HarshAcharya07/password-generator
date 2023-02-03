@@ -4,6 +4,4 @@ Try Password Generator Chrome Extension.
 
 
 ## Preview
-
-![](https://raw.githubusercontent.com/HarshAcharya07/password-generator/main/preview.gif?token=GHSAT0AAAAAAB5NWOR334N7VZZ3EFWQIGNKY65JUQA)
-
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/CLf8dTzn/final.gif' border='0' alt='final'/></a>
